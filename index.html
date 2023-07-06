@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="author" content="Luisangel Betancourt">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="css/index.css" />
+        <title>Gauss -- Newton-Raphson</title>
+    </head>
+    <body>
+        <h1>Calculadora de:</h1>
+
+        <div class="container align-items-center">
+            <nav class="nav-menu">
+                <h4 id="g" class="active">Interpolacion Lineal</h4>
+            </nav>
+        </div>
+        <div class="container inter-data-collect">
+            <p>Basandonos en la formula de interpolacion lineal:</p>
+            <img src="img/formula.jpg" alt="formula">
+            <p>Solicitamos los siguientes datos:</p>
+            <form id="inter_form">
+                <label for="f">f0(x)</label>
+                <input type="number" name="f" id="" required>
+                <label for="f1">f1(x)</label>
+                <input type="number" name="f1" id="" required>
+                <label for="x0">x0</label>
+                <input type="number" name="x0" required>
+                <label for="x1">x1</label>
+                <input type="number" name="x1">
+                <p>Valor x a interpolar:</p>
+                <label for="x">x</label>
+                <input type="number" name="x" required>
+                <button class="btn btn-primary ">Calcular</button>
+                <!-- Test -->
+                <!-- <label for="f">f1(x)</label>
+                <input type="number" name="f" id="" value="3710">
+                <label for="f2">f2(x)</label>
+                <input type="number" name="f2" id="" value="4450">
+                <label for="x0">x0</label>
+                <input type="number" name="x0" value="1970">
+                <label for="x1">x1</label>
+                <input type="number" name="x1" value="1980">
+                <p>Valor x a interpolar:</p>
+                <label for="x">x</label>
+                <input type="number" name="x" value="1976">
+                <button class="btn btn-primary ">Calcular</button> -->
+            </form>
+            <div id="resultDiv"></div>
+        </div>   
+
+        <footer class="footer">
+            <p>Desarrollado por Luisangel Betancourt para el sub-proyecto "Metodos Numericos" </p>
+            <a href="https://github.com/Luisangelebp/Calculadora-de-Interpolacion-Lineal" target="_blank"><i class="bi bi-github"></i></a>
+            <a href="#" target="_blank" ><i class="bi bi-youtube"></i></a>
+        </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"
+        ></script>
+        <script src="js/inter.js"></script>
+    </body>
+</html>
